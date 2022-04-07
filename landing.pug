@@ -1,0 +1,17 @@
+extend components/template.pug
+block contenidos
+  section.intro 
+    .intro__imagen: img(src="images/imagen.png")
+    .intro__contenido 
+      h2  #{titulos[2]}
+      p
+        | Lorem ipsum, 
+        | dolor sit amet consectetur 
+        | adipisicing.
+        span Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero.
+      a.boton Leer más
+  main.contenido
+    +caja('imagen.png', titulos[1], 'Lorem ipsum,Lorem ipsum,Lorem ipsum,')
+    +caja('imagen.png', titulos[2], 'Lorem ipsum,Lorem ipsum,Lorem ipsum,')
+    +caja('imagen.png', titulos[3], 'Lorem ipsum,Lorem ipsum,Lorem ipsum,')
+      

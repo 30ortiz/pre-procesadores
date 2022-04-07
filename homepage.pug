@@ -1,0 +1,6 @@
+extend components/template.pug
+block contenidos
+  section.home 
+    include components/sidebar.pug
+    +article(article__content.title, article__content.article) 
+
